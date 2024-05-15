@@ -1,7 +1,7 @@
 import type { State } from "js-yaml";
 
 // maps path in object to position information
-interface PathMap {
+export interface PathMap {
   [path: string]: {
     line: number;
     position: number;
@@ -9,7 +9,7 @@ interface PathMap {
   };
 }
 
-interface Fragment {
+export interface Fragment {
   path: string;
   line: number;
   position: number;
@@ -17,7 +17,7 @@ interface Fragment {
   children?: Fragment[];
 }
 
-interface SourceLocation {
+export interface SourceLocation {
   line: number;
   column: number;
   position: number;
